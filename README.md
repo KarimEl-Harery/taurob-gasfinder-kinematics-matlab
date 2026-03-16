@@ -6,7 +6,12 @@ The project focuses on modeling and simulating the **forward kinematics (FK)** a
 
 The robot model is imported from a URDF file and simulated as a rigid body tree.
 
----
+## 🎥 Demonstration
+
+<p align="center">
+<img src="robot_trajectory.gif" width="400">
+<img src="robot_forward.gif" width="400">
+</p>
 
 # Project Overview
 
@@ -34,11 +39,6 @@ The inverse kinematics simulation computes joint configurations required for the
 - 3D robot visualization  
 - Video export  
 
-## Demo
-
-```bash
-robot_trajectory.mp4
-```
 
 ---
 
@@ -52,12 +52,6 @@ The forward kinematics simulation calculates the **end-effector position and ori
 - End-effector pose computation  
 - Visualization of the workspace  
 - Trajectory recording  
-
-## Demo
-
-```bash
-robot_forward.mp4
-```
 
 ---
 
