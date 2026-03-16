@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Taurob_Gasfinder_Assembly">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.007761 3.4698E-16 -0.18504"
+        rpy="0 0 0" />
+      <mass
+        value="763.47" />
+      <inertia
+        ixx="1562.8"
+        ixy="1.4448E-13"
+        ixz="-2.0526E-06"
+        iyy="1563.1"
+        iyz="9.4512E-14"
+        izz="3125.3" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="first">
+    <inertial>
+      <origin
+        xyz="0.51393 -0.22123 -0.69826"
+        rpy="0 0 0" />
+      <mass
+        value="490.79" />
+      <inertia
+        ixx="37.877"
+        ixy="11.078"
+        ixz="0.87439"
+        iyy="75.007"
+        iyz="-1.8652"
+        izz="68.022" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/first.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/first.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="first_joint"
+    type="revolute">
+    <origin
+      xyz="0.432470565879692 -0.683 0.08"
+      rpy="-1.5707963267949 0 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="first" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Coordinate_0">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 0 0.13"
+        rpy="0 0 0" />
+      <mass
+        value="0.31416" />
+      <inertia
+        ixx="0.00078802"
+        ixy="-2.5016E-19"
+        ixz="-3.5441E-20"
+        iyy="0.00078802"
+        iyz="-3.1993E-20"
+        izz="0.0015708" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Coordinate_0_joint"
+    type="fixed">
+    <origin
+      xyz="0.692470565879692 -0.595 -0.603"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="first" />
+    <child
+      link="Coordinate_0" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Coordinate_Torsion">
+    <inertial>
+      <origin
+        xyz="1.078E-08 4.1633E-17 0.11008"
+        rpy="0 0 0" />
+      <mass
+        value="5.1142" />
+      <inertia
+        ixx="0.048819"
+        ixy="-5.322E-08"
+        ixz="5.5272E-09"
+        iyy="0.049542"
+        iyz="-2.6383E-17"
+        izz="0.033552" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_Torsion.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_Torsion.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Coordinate_Torsion_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.125"
+      rpy="0 0 0" />
+    <parent
+      link="Coordinate_0" />
+    <child
+      link="Coordinate_Torsion" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Coordinate_1">
+    <inertial>
+      <origin
+        xyz="-5.1977E-05 -0.14468 -0.084264"
+        rpy="0 0 0" />
+      <mass
+        value="24.526" />
+      <inertia
+        ixx="1.5804"
+        ixy="-0.00019746"
+        ixz="-8.5811E-05"
+        iyy="0.64307"
+        iyz="-0.41047"
+        izz="1.0794" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Coordinate_1_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.21"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Coordinate_Torsion" />
+    <child
+      link="Coordinate_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Coordinate_2">
+    <inertial>
+      <origin
+        xyz="0.38672 -2.5094E-07 -0.31263"
+        rpy="0 0 0" />
+      <mass
+        value="36.832" />
+      <inertia
+        ixx="0.80593"
+        ixy="7.7203E-07"
+        ixz="0.86422"
+        iyy="6.2877"
+        iyz="2.1207E-07"
+        izz="5.711" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Coordinate_2_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.6 0"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="Coordinate_1" />
+    <child
+      link="Coordinate_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Coordinate_3">
+    <inertial>
+      <origin
+        xyz="0.20964 0.062511 -0.055142"
+        rpy="0 0 0" />
+      <mass
+        value="60.238" />
+      <inertia
+        ixx="2.4612"
+        ixy="-0.41556"
+        ixz="-0.38065"
+        iyy="2.1039"
+        iyz="-0.1135"
+        izz="3.5079" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/Coordinate_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Coordinate_3_joint"
+    type="revolute">
+    <origin
+      xyz="1 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Coordinate_2" />
+    <child
+      link="Coordinate_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.2"
+      upper="3.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="EE">
+    <inertial>
+      <origin
+        xyz="-8.8818E-16 0.025 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.8553" />
+      <inertia
+        ixx="0.0058285"
+        ixy="-2.0781E-19"
+        ixz="-1.3516E-18"
+        iyy="0.0058285"
+        iyz="1.6552E-21"
+        izz="0.011643" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/EE.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/EE.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EE"
+    type="fixed">
+    <origin
+      xyz="0.320000000000001 0.42 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Coordinate_3" />
+    <child
+      link="EE" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="CS_Link">
+    <inertial>
+      <origin
+        xyz="0.57177 0.733 0.00073917"
+        rpy="0 0 0" />
+      <mass
+        value="13.094" />
+      <inertia
+        ixx="0.14283"
+        ixy="2.6905E-18"
+        ixz="1.0263E-06"
+        iyy="0.75414"
+        iyz="-4.1191E-09"
+        izz="0.61392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/CS_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Taurob_Gasfinder_Assembly/meshes/CS_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="CS_Link"
+    type="revolute">
+    <origin
+      xyz="0.744555036388265 0 -1.416"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="first" />
+    <child
+      link="CS_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
