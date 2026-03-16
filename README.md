@@ -1,14 +1,20 @@
 # Taurob Gasfinder Kinematics (MATLAB)
 
-<p align="center">
-<img src="taurob.png" width="600">
-</p>
 
 This repository contains a kinematic simulation of the **Taurob Gasfinder robotic manipulator** implemented in MATLAB.
 This repository contains a kinematic simulation of the **Taurob Gasfinder robotic manipulator** implemented in MATLAB.
 
 The project focuses on modeling and simulating the **forward kinematics (FK)** and **inverse kinematics (IK)** of a multi-body robotic system using MATLAB’s Robotics Toolbox.
 
+
+
+## Robot Model
+
+<p align="center">
+<img src="taurob.png" width="600">
+</p>
+
+The Taurob Gasfinder robot was modeled in **SolidWorks** and exported as a URDF model for MATLAB.
 The robot model is imported from a URDF file and simulated as a rigid body tree.
 
 ## 🎥 Demonstration
