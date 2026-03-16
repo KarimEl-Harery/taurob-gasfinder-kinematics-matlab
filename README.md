@@ -1,7 +1,7 @@
 # Taurob Gasfinder Kinematics (MATLAB)
 
 <p align="center">
-<img src="taurob_model.png" width="600">
+<img src="taurob.png" width="600">
 </p>
 
 This repository contains a kinematic simulation of the **Taurob Gasfinder robotic manipulator** implemented in MATLAB.
